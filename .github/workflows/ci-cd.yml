@@ -22,9 +22,9 @@ jobs:
         go-version: 1.20
 
     - name: Build
-      working-directory: ./cmd  # <== Katalogingizga qarab sozlang
+      working-directory: ./cmd  
       run: go build -o main ./cmd/main.go
 
     - name: Run tests
-      working-directory: ./cmd  # <== Katalogingizga qarab sozlang
+      working-directory: ./cmd  
       run: go test ./...
